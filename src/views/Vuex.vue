@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="vuex" @click="toTest">toTest</div>
   <div>{{count}}</div>
@@ -18,8 +14,8 @@ export default defineComponent({
     };
     return { count, increment };
   },
-  methods:{
-    toTest(){
+  methods: {
+    toTest () {
       this.$router.push('/test');
     }
   }
